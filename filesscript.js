@@ -2,7 +2,7 @@ const fileInput = document.getElementById('file');
 const submitButton = document.getElementById('submit');
 const uploadedFilesContainer = document.querySelector('.right');
 
-// Load stored files from sessionStorage on page load
+
 const storedFiles = JSON.parse(sessionStorage.getItem('uploadedFiles')) || [];
 storedFiles.forEach(fileData => {
     displayUploadedFile(fileData.name, fileData.url);
